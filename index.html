@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            height: 50vh;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .hero {
+            background-color: #f0f0f0;
+            padding: 50px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cta {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .cta:hover {
+            background-color: #45a049;
+        } */
+
+        body {
+            font-family: 'poppins', Arial, sans-serif;
+        }
+        header {
+            height: 80vh;
+        }
+        .header-bg {
+            background-image: url('/images/background_image.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .white-logo {
+            filter: brightness(0) invert(1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-green-600 text-white p-5">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="font-bold text-xl">Qiangsheng Company</a>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:text-green-400">Home</a></li>
+                <li><a href="#services" class="hover:text-green-400">Services</a></li>
+                <li><a href="#about" class="hover:text-green-400">About</a></li>
+                <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header-bg bg-green-600 p-5 text-white text-5xl text-center flex items-center justify-center">
+        <div class="flex flex-col items-center">
+            <img src="images/logo.png" alt="Startup Company Logo" class="w-16 h-16 mx-auto mb-2 white-logo">
+            <div class="font-bold">Create a website with ChatGPT</div>
+        </div>
+    </header>
+    <!-- <div class="hero p-12 text-center">
+        <h1 class="text-5xl font-bold mb-5">Welcome to Our Startup</h1>
+        <p class="text-xl max-w-3xl mx-auto mb-5">
+            We are a new and innovative startup company that aims to revolutionize the industry with cutting-edge technology and exceptional customer service. Join us on our journey to make the world a better place!
+        </p>
+        <a href="#" class="cta inline-block text-white bg-green-600 py-3 px-8 rounded text-lg hover:bg-green-500">Get Started</a>
+    </div> -->
+
+    <main class="flex-grow">
+        <div class="hero p-12 text-center">
+            <h1 class="text-5xl font-bold mb-5">Welcome to Our Homepage</h1>
+            <p class="text-xl max-w-3xl mx-auto mb-5">
+                We are a new and innovative startup company that aims to revolutionize the industry with cutting-edge technology and exceptional customer service. Join us on our journey to make the world a better place!
+            </p>
+            <a href="#" class="cta inline-block text-white bg-green-600 py-3 px-8 rounded text-lg hover:bg-green-500">Get Started</a>
+        </div>
+
+        <section class="services py-12" id="services">
+            <h2 class="text-3xl font-bold mb-5 text-center">Our Services</h2>
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded shadow text-center">
+                    <img src="/images/services1.jpg" alt="Service 1" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-2xl font-bold mb-2">Service 1</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat nec nulla facilisis.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow text-center">
+                    <img src="/images/services2.jpg" alt="Service 2" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-2xl font-bold mb-2">Service 2</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat nec nulla facilisis.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow text-center">
+                    <img src="/images/services3.jpg" alt="Service 3" class="w-full h-48 object-cover mb-4 rounded">
+                    <h3 class="text-2xl font-bold mb-2">Service 3</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat nec nulla facilisis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="contact-us bg-gray-200 py-12">
+            <h2 class="text-3xl font-bold mb-5 text-center">Contact Us</h2>
+            <p class="text-xl text-center mb-5">If you have any questions or concerns, feel free to reach out to us:</p>
+            <div class="flex flex-col items-center space-y-2">
+                <div class="text-lg"><strong>Email:</strong> info@startupcompany.com</div>
+                <div class="text-lg"><strong>Phone:</strong> +1 (123) 456-7890</div>
+                <div class="text-lg"><strong>Address:</strong> 123 Startup St, San Francisco, CA 94105</div>
+            </div>
+        </div> -->
+        
+        <!-- 把contact us的文本更改为一个表单 -->
+        <div class="contact-us bg-gray-200 py-12" id="contact">
+            <h2 class="text-3xl font-bold mb-5 text-center">Contact Us</h2>
+            <p class="text-xl text-center mb-5">If you have any questions or concerns, feel free to reach out to us:</p>
+            <div class="w-full max-w-md mx-auto">
+                <form action="#" method="POST" class="bg-white p-6 rounded shadow">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name:</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email:</label>
+                        <input type="email" name="email" id="email" placeholder="example@example.com" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message:</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Type your message here..." class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="bg-green-600 text-white text-center py-5">
+        <div class="text-xl mb-3">Follow us on social media</div>
+        <div class="space-x-4">
+            <a href="#" class="text-2xl hover:text-green-500">Facebook</a>
+            <a href="#" class="text-2xl hover:text-green-500">Twitter</a>
+            <a href="#" class="text-2xl hover:text-green-500">LinkedIn</a>
+            <a href="#" class="text-2xl hover:text-green-500">Instagram</a>
+        </div>
+    </footer>
+
+    <div class="copyright bg-green-700 text-white text-center py-3">
+        &copy; 2023 Qiangsheng Company. All rights reserved.
+    </div>
+</body>
+</html>
